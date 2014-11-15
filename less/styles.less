@@ -3,7 +3,8 @@
 body {
     width: 100%;
     height: 100%;
-    font-family: "Lora","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: 'Lato', sans-serif;
+    font-weight: 200;
     color: @gray;
 }
 
@@ -19,57 +20,90 @@ h4,
 h5,
 h6 {
     margin: 0 0 35px;
-    text-transform: uppercase;
-    font-family: "Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: 'Dancing Script', cursive;
     font-weight: 700;
     letter-spacing: 1px;
 }
 
+h2{
+    font-size: 45px;
+    font-weight: 400;
+    display: inline-block;
+    margin: 0 auto 35px;
+    position:relative;
+    padding: 0 80px;
+
+}
+h2:before, h2:after{
+    content: " ";
+    display: block;
+    width: 58px;
+    height: 37px;
+    position:absolute;
+    top: 50%;
+    margin-top: -16px;
+}
+h2:before{
+    background-image :url('../img/flower-left.png');
+    left: 0;
+}
+h2:after{
+    background-image :url('../img/flower-right.png');
+    right: 0;
+}
+
+
 p {
-    margin: 0 0 25px;
-    font-size: 18px;
+    margin: 0 0 15px;
+    font-size: 16px;
     line-height: 1.5;
 }
 
 .lead{
     color: @dark;
+    font-size: 20px;
+    font-weight: 100;
 }
 
 @media(min-width:767px) {
     p {
-        margin: 0 0 35px;
+        margin: 0 0 20px;
         font-size: 20px;
         line-height: 1.6;
+    }
+    .lead{
+        font-size: 28px;
     }
 }
 
 a {
     color: darken(@primary,5%);
+    text-decoration: underline;
     -webkit-transition: all .2s ease-in-out;
     -moz-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
     &:hover,
     &:focus {
-        text-decoration: none;
         color: darken(@primary,20%);
     }
+}
+
+small, .small {
+    font-size: 75%;
 }
 
 .navbar {
     margin-bottom: 0;
     border-bottom: 1px solid fade(@light, 30%);
     text-transform: uppercase;
-    font-family: "Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: 'Lato', sans-serif;
     background-color: @dark;
     a {
         color: @light;
+        text-decoration: none;
     }
     .nav {
         li {
-            &.active {
-                outline: nonte;
-                background-color: fade(@light, 30%);
-            }
             a {
                 -webkit-transition: background .3s ease-in-out;
                 -moz-transition: background .3s ease-in-out;
@@ -80,6 +114,9 @@ a {
                     outline: none;
                     background-color: fade(@light, 30%);
                 }
+            }
+            &.active a{
+                background-color: fade(@light, 50%);
             }
         }
     }
@@ -94,9 +131,10 @@ a {
     }
     .navbar-toggle{
         color: @light;
+        margin-top: 5px;
+        margin-bottom: 5px;
     }
 }
-
 
 @media(min-width:767px) {
     .navbar {
@@ -115,19 +153,29 @@ a {
             background-color: transparent;
         }
     }
-
 }
 
 .intro {
     width: 100%;
     text-align: center;
     margin-top:50px;
-    color: @dark;
+    color: @gray;
     background-color: @light;
     background-size: contain;
     .intro-body {
         .intro-text {
-            font-size: 18px;
+            font-size: 20px;
+            font-weight: 100;
+            margin: 0 0 55px;
+            line-height: 30px;
+        }
+        img{
+            margin: 0 auto;
+        }
+        strong{
+            font-style: italic;
+            font-size: 1.2em;
+            font-weight: 300;
         }
     }
 }
@@ -136,15 +184,20 @@ a {
     .intro {
         .intro-body {
             .intro-text {
-                font-size: 25px;
+                font-size: 30px;
+                line-height: 40px;
             }
         }
     }
 }
 
 .content-section {
-    padding-top: 80px;
-    padding-bottom: 20px;
+    padding-top: 65px;
+    padding-bottom: 50px;
+}
+
+.rsvp-section {
+    padding-top: 0;
 }
 
 .reception-section{
@@ -162,10 +215,12 @@ a {
     width: 100%;
     height: 500px;
     .gm-style-iw{
+        width: 220px;
         h3{
             margin: 0 0 5px;
             text-align: center;
             padding-left: 23px;
+            font-size: 30px;
         }
         p{
             text-align: center;
@@ -177,7 +232,7 @@ a {
             text-align: center;
             width: 100%;
             display: inline-block;
-            font-size: 20px;
+            font-size: 18px;
             padding-left: 23px;
         }
     }
@@ -191,7 +246,6 @@ a {
 
 .btn {
     text-transform: uppercase;
-    font-family: "Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 400;
     -webkit-transition: all .3s ease-in-out;
     -moz-transition: all .3s ease-in-out;
@@ -209,6 +263,10 @@ a {
         color: @dark;
         background-color: @primary;
     }
+}
+
+.flags{
+    margin: 0 auto 50px;
 }
 
 ::-moz-selection {
