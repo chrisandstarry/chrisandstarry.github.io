@@ -1,0 +1,198 @@
+body {
+  width: 100%;
+  height: 100%;
+  font-family: "Lora", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #bcbec0;
+}
+html {
+  width: 100%;
+  height: 100%;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0 0 35px;
+  text-transform: uppercase;
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+p {
+  margin: 0 0 25px;
+  font-size: 18px;
+  line-height: 1.5;
+}
+.lead {
+  color: #efa8a8;
+}
+@media (min-width: 767px) {
+  p {
+    margin: 0 0 35px;
+    font-size: 20px;
+    line-height: 1.6;
+  }
+}
+a {
+  color: #f9cfcf;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+a:hover,
+a:focus {
+  text-decoration: none;
+  color: #f18b8b;
+}
+.navbar {
+  margin-bottom: 0;
+  border-bottom: 1px solid rgba(251, 239, 239, 0.3);
+  text-transform: uppercase;
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-color: #efa8a8;
+}
+.navbar a {
+  color: #fbefef;
+}
+.navbar .nav li.active {
+  outline: nonte;
+  background-color: rgba(251, 239, 239, 0.3);
+}
+.navbar .nav li a {
+  -webkit-transition: background 0.3s ease-in-out;
+  -moz-transition: background 0.3s ease-in-out;
+  transition: background 0.3s ease-in-out;
+}
+.navbar .nav li a:hover,
+.navbar .nav li a:focus,
+.navbar .nav li a.active {
+  outline: none;
+  background-color: rgba(251, 239, 239, 0.3);
+}
+.navbar .navbar-nav {
+  display: inline-block;
+  float: none;
+  vertical-align: top;
+}
+.navbar .navbar-collapse {
+  text-align: center;
+  background-color: #f3bebe;
+}
+.navbar .navbar-toggle {
+  color: #fbefef;
+}
+@media (min-width: 767px) {
+  .navbar {
+    padding: 20px 0;
+    border-bottom: none;
+    letter-spacing: 1px;
+    background: transparent;
+    -webkit-transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
+    -moz-transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
+    transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
+    padding: 0;
+    background-color: #efa8a8;
+    border-bottom: 1px solid rgba(251, 239, 239, 0.3);
+  }
+  .navbar .navbar-collapse {
+    text-align: center;
+    background-color: transparent;
+  }
+}
+.intro {
+  width: 100%;
+  text-align: center;
+  margin-top: 50px;
+  color: #efa8a8;
+  background-color: #fbefef;
+  background-size: contain;
+}
+.intro .intro-body .intro-text {
+  font-size: 18px;
+}
+@media (min-width: 767px) {
+  .intro .intro-body .intro-text {
+    font-size: 25px;
+  }
+}
+.content-section {
+  padding-top: 80px;
+  padding-bottom: 20px;
+}
+.reception-section {
+  background: url('../img/grid.png');
+}
+.map-section {
+  padding-bottom: 0;
+}
+.map-section > div:first-child {
+  margin-bottom: 40px;
+}
+#map-zone {
+  width: 100%;
+  height: 500px;
+}
+#map-zone .gm-style-iw h3 {
+  margin: 0 0 5px;
+  text-align: center;
+  padding-left: 23px;
+}
+#map-zone .gm-style-iw p {
+  text-align: center;
+  font-size: 15px;
+  margin: 0 0 5px;
+  padding-left: 23px;
+}
+#map-zone .gm-style-iw a {
+  text-align: center;
+  width: 100%;
+  display: inline-block;
+  font-size: 20px;
+  padding-left: 23px;
+}
+@media (min-width: 767px) {
+  #map-zone {
+    height: 600px;
+  }
+}
+.btn {
+  text-transform: uppercase;
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.btn-default {
+  border: 1px solid #fce6e6;
+  color: #fce6e6;
+  background-color: transparent;
+}
+.btn-default:hover,
+.btn-default:focus {
+  border: 1px solid #fce6e6;
+  outline: none;
+  color: #efa8a8;
+  background-color: #fce6e6;
+}
+::-moz-selection {
+  text-shadow: none;
+  background: #fcfcfc;
+  background: rgba(251, 239, 239, 0.2);
+}
+::selection {
+  text-shadow: none;
+  background: #fcfcfc;
+  background: rgba(251, 239, 239, 0.2);
+}
+img::selection {
+  background: transparent;
+}
+img::-moz-selection {
+  background: transparent;
+}
+body {
+  webkit-tap-highlight-color: rgba(251, 239, 239, 0.2);
+}
