@@ -11,8 +11,8 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
     <link href="font-awesome-4.2.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href='http://fonts.googleapis.com/css?family=Dancing+Script:400,700' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,100italic,300italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Dancing+Script:700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,700,300italic' rel='stylesheet' type='text/css'>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -172,29 +172,30 @@
     <section id="rsvp" class="rsvp-section content-section text-center">
         <div class="container">
             <div class="row">
-                <div class="col-lg-8 col-lg-offset-2">
-                    <div class="row">
-                        <div class="small-12 medium-6 medium-offset-3 large-offset-3 columns">
-                            <img class="img-responsive flags" src="img/flag.png" >
-                            <h2 class="title">Répondez S'il Vous Plaît</h2>
+
+                        <img class="img-responsive flags" src="img/flag.png" >
+                        <h2 class="title">Répondez S'il Vous Plaît</h2>
+
+                        <div class="col-md-8 col-md-offset-2">
 
                             <form method="post" action="https://docs.google.com/forms/d/1xPzBETWYStkmVhY3fljDZZpfNfI9Beo82aP8oV9iIkY/formResponse">
+
                                 <h5>Your Details</h5>
-                                <input type="text" placeholder="Name" required name="entry.278950561" />
-                                <input type="email" placeholder="Email" required name="entry.1974606905" />
-                                <input type="tel" placeholder="Mobile" required name="entry.1109784277" />
-                                <textarea placeholder="Postal Address" required name="entry.575573421"></textarea>
+                                <input type="text" placeholder="Name" required name="entry.278950561" class="form-control"/>
+                                <input type="email" placeholder="Email" required name="entry.1974606905" class="form-control"/>
+                                <input type="tel" placeholder="Mobile" required name="entry.1109784277" class="form-control"/>
+                                <textarea placeholder="Postal Address" required name="entry.575573421"class="form-control"></textarea>
 
                                 <h5>Wedding</h5>
-                                <label>Will you attend the wedding?</label>
-                                <select name="entry.1146969033" size="1" required class="small-6 medium-4 large-4">
+                                <label for="weddingAttend">Will you attend the wedding?</label>
+                                <select name="entry.1146969033" id="weddingAttend" required class="form-control">
                                     <option value=""></option>
                                     <option value="Yes">Yes</option>
                                     <option value="No">No</option>
                                 </select>
 
-                                <label>Are you bringing anyone else with you?</label>
-                                <select name="entry.490267223" size="1" class="small-6 medium-4 large-4">
+                                <label for="weddingBring">Are you bringing anyone else with you?</label>
+                                <select name="entry.490267223" id="weddingBring" class="form-control">
                                     <option value="0"></option>
                                     <option value="0">No</option>
                                     <option value="1">Yes, 1 other</option>
@@ -202,20 +203,18 @@
                                     <option value="3">Yes, 3 others</option>
                                     <option value="4">Yes, 4 others</option>
                                     <option value="5">Yes, 5 others</option>
-                                    <option value="6">Yes, 6 others</option>
-                                    <option value="7">Yes, 7 others</option>
                                 </select>
 
                                 <h5>Reception</h5>
-                                <label>Will you attend the reception?</label>
-                                <select name="entry.2088131436" size="1" required class="small-6 medium-4 large-4">
+                                <label for="receptionAttend">Will you attend the reception?</label>
+                                <select name="entry.2088131436" id="receptionAttend" required class="form-control">
                                     <option value=""></option>
                                     <option value="Yes">Yes</option>
                                     <option value="No">No</option>
                                 </select>
 
-                                <label>Are you bringing anyone else with you?</label>
-                                <select name="entry.1194970819" size="1" class="small-6 medium-4 large-4">
+                                <label for="receptionBring">Are you bringing anyone else with you?</label>
+                                <select name="entry.1194970819" id="receptionBring" class="form-control">
                                     <option value="0"></option>
                                     <option value="0">No</option>
                                     <option value="1">Yes, 1 other</option>
@@ -223,24 +222,21 @@
                                     <option value="3">Yes, 3 others</option>
                                     <option value="4">Yes, 4 others</option>
                                     <option value="5">Yes, 5 others</option>
-                                    <option value="6">Yes, 6 others</option>
-                                    <option value="7">Yes, 7 others</option>
                                 </select>
 
                                 <h5>Notes</h5>
                                 <label>Do you have any specific food needs?</label>
-                                <textarea placeholder="Dietary requirements" name="entry.706789004"></textarea>
+                                <textarea placeholder="Dietary requirements" name="entry.706789004" class="form-control"></textarea>
 
                                 <label>Any other comments or questions?</label>
-                                <textarea placeholder="General comments" name="entry.25290771"></textarea>
+                                <textarea placeholder="General comments" name="entry.25290771" class="form-control"></textarea>
 
-                                <div class="center">
-                                    <button type="submit">Submit</button>
+                                <div class="text-center">
+                                    <button type="submit" class="btn btn-default btn-lg">Submit</button>
                                 </div>
                             </form>
 
-                        </div>
-                    </div>
+
                 </div>
             </div>
         </div>

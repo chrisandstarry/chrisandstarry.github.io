@@ -2,8 +2,8 @@ body {
   width: 100%;
   height: 100%;
   font-family: 'Lato', sans-serif;
-  font-weight: 200;
-  color: #bcbec0;
+  font-weight: 300;
+  color: #aeafb3;
 }
 html {
   width: 100%;
@@ -55,7 +55,6 @@ p {
 .lead {
   color: #efa8a8;
   font-size: 20px;
-  font-weight: 100;
 }
 @media (min-width: 767px) {
   p {
@@ -68,7 +67,7 @@ p {
   }
 }
 a {
-  color: #f9cfcf;
+  color: #f7b8b8;
   text-decoration: underline;
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
@@ -76,7 +75,7 @@ a {
 }
 a:hover,
 a:focus {
-  color: #f18b8b;
+  color: #ec5d5d;
 }
 small,
 .small {
@@ -143,13 +142,12 @@ small,
   width: 100%;
   text-align: center;
   margin-top: 50px;
-  color: #bcbec0;
+  color: #aeafb3;
   background-color: #fbefef;
   background-size: contain;
 }
 .intro .intro-body .intro-text {
   font-size: 20px;
-  font-weight: 100;
   margin: 0 0 55px;
   line-height: 30px;
 }
@@ -214,6 +212,24 @@ small,
     height: 600px;
   }
 }
+form {
+  text-align: left;
+  max-width: 500px;
+  margin: 0 auto;
+}
+.form-control {
+  margin-bottom: 10px;
+}
+.form-control:focus {
+  border-color: #efa8a8;
+  outline: 0;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(239, 168, 168, 0.6);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(239, 168, 168, 0.6);
+}
+h5 {
+  font-size: 25px;
+  margin: 30px 0 10px;
+}
 .btn {
   text-transform: uppercase;
   font-weight: 400;
@@ -222,13 +238,14 @@ small,
   transition: all 0.3s ease-in-out;
 }
 .btn-default {
-  border: 1px solid #fce6e6;
-  color: #fce6e6;
+  border: 1px solid #f7b8b8;
+  color: #f7b8b8;
   background-color: transparent;
+  text-decoration: none;
 }
 .btn-default:hover,
 .btn-default:focus {
-  border: 1px solid #fce6e6;
+  border: 1px solid #f7b8b8;
   outline: none;
   color: #efa8a8;
   background-color: #fce6e6;
